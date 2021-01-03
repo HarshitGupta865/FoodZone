@@ -1,0 +1,138 @@
+body {
+    text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.img_responsive {
+  max-width: 100%;
+}
+
+/* Heading section */
+
+.hero_image {
+  background-image: url("../images/food_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  margin-bottom: 1rem;
+}
+
+.hero_wrapper {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 2;
+  line-height: 1.5rem;
+  padding: 0 5%;
+}
+
+.form_code .post_code {
+  display: block;
+  width: 60%;
+  margin: 0 auto;   /*to align the search block horizontally and vertically */
+  border-radius: 2rem;
+  padding: .5rem;
+  text-align: center;
+  border: none;
+  outline: none;   /*to remove the outline drawn at the border of the block */
+}
+
+.post_code:hover {
+  background-color: #e2eaf0;
+}
+
+.form_code button {
+  display: inline-block;
+  margin: 1.5rem auto 0 ;
+}
+
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 15px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #008bf5;
+  background-image: -webkit-linear-gradient(top, #008bf5, #e2eaf0);
+  background-image: -moz-linear-gradient(top, #008bf5, #e2eaf0);
+  background-image: -ms-linear-gradient(top, #008bf5, #e2eaf0);
+  background-image: -o-linear-gradient(top, #008bf5, #e2eaf0);
+  background-image: linear-gradient(to bottom, #008bf5, #e2eaf0);
+  text-decoration: none;
+}
+
+.overlay {
+  background: #0000008a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%
+}
+
+/* foodlist section starts */
+
+.product {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.food_list {
+  float: left;
+  width: 32%;
+  margin-left: 0.5rem;
+}
+
+.para-padding {
+  padding: 0 5%;
+}
+
+/* food-section ends */
+
+/* footer section starts */
+
+.footer {
+  clear: both;
+}
+
+.footer h2 {
+ padding-top: 20px
+}
+
+.social-icon {
+  margin: 20px 10px;
+  color: #ef8172;
+}
+
+.social-icon:hover {
+  color: #ff4c68;
+}
+
+/* footer section ends */
+
+@media screen and (max-width: 700px) {
+  .food_list {
+    width: 50%;
+    float: none;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
